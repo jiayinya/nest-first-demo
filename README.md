@@ -1,12 +1,7 @@
+<h1 align="center">
+  Nest.js 初探实战项目todo-demo (CRUD)
+</h1>
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
@@ -22,52 +17,42 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## 项目简介
+这是一个 Nest.js 初探实战的 todo-demo (CRUD) 项目，使用的技术栈为 Nest.js + TypeScript + TypeORM + Mysql + Swagger，适合完全不了解 Nest.js 的同学，可以对它有一个大概的印象。
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 项目背景
+最近想学习 Nest.js, 但是一直没有找到合适的教程（到现在为止也没找到），因为对服务端了解太浅，啃官网也很费力。
+最后找到了一个比较不错的<a href="https://note.buging.cn/nest/1-1.html">专栏</a>，参考这个专栏，算是初步了解了 Nest.js，开始入门服务端，未来还有很长的路要走。
 
-## Installation
+## 项目预览
+<img src="./imgs/1.png" style="max-width: 1000px;"><br/>
+<img src="./imgs/2.png" style="max-width: 1000px;"><br/>
+<img src="./imgs/3.png" style="max-width: 1000px;"><br/>
+
+## 运行项目
+
+### 准备工作
+
+1. 本地安装 mysql
+2. 创建 todos 数据库
+3. 我有可视化需求所以使用的 navicat，也可以选择不用
+
+### 启动项目
+
+#### Installation
 
 ```bash
 $ yarn install
 ```
 
-## Running the app
+#### Running
 
 ```bash
 # development
-$ yarn run start
+$ yarn start
 
 # watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
+$ yarn start:dev
 ```
 
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+此时，项目已经跑起来在 3000 端口了，浏览器访问 http://localhost:3000/docs 就可以查看 swagger 文档，可以尝试调取接口增删改查啦～
