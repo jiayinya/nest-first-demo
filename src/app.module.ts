@@ -6,7 +6,6 @@ import { TodosModule } from './todos/todos.module';
 
 @Module({
   imports: [
-    TodosModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
@@ -17,6 +16,7 @@ import { TodosModule } from './todos/todos.module';
       entities: ['dist/**/entities/*.entity{.ts,.js}'],
       synchronize: true,
     }),
+    TodosModule,
   ],
   controllers: [AppController],
   providers: [AppService],
