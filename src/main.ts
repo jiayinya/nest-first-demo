@@ -27,6 +27,6 @@ async function bootstrap() {
   // 全局注册管道
   app.useGlobalPipes(new ValidationPipe());
 
-  await app.listen(3000);
+  await app.listen(3200);
 }
 bootstrap();
